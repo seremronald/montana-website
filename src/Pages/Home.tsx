@@ -4,54 +4,57 @@ import About from '../Sections/About'
 import FeaturedProducts from '../Sections/FeaturedProducts'
 
 export default function Home() {
-  return (
+  return ( 
     <div>
       {/* --- Hero Section --- */}
       <Hero />
 
-      <div className="container py-5">
+      <div className="container py-0">
 
         {/* --- About Section --- */}
         <About />
 
         {/* --- Why Choose Montana Feeds --- */}
-        <section className="my-5 p-5 rounded-3 bg-success-subtle">
-          <h2 className="text-center mb-4 text-success">Why Choose Montana Feeds</h2>
-          <div className="row">
-            <div className="col-md-4 mb-3">
-              <div className="card shadow-sm h-100 border-0">
-                <div className="card-body">
-                  <h5 className="card-title text-success">Superior Animal Feeds</h5>
-                  <p className="card-text">
-                    Our feeds are made with premium-quality ingredients to provide complete and balanced nutrition for your livestock, ensuring optimal health and productivity.
-                  </p>
-                </div>
-              </div>
-            </div>
+<section className="my-5 p-5 rounded-3 bg-light">
+  <h2 className="text-center mb-4 text-success">WHY SEREM FARM FEEDS</h2>
+  <div className="row">
 
-            <div className="col-md-4 mb-3">
-              <div className="card shadow-sm h-100 border-0">
-                <div className="card-body">
-                  <h5 className="card-title text-success">Specially Formulated Feeds</h5>
-                  <p className="card-text">
-                    Each feed is developed by expert nutritionists to meet specific dietary needs — for dairy cows, layers, kienyeji chickens, and sheep.
-                  </p>
-                </div>
-              </div>
-            </div>
+    <div className="col-md-4 mb-3">
+      <div className="card shadow-sm h-100 border-0" style={{ backgroundColor: "#ED1C23" }}>
+        <div className="card-body">
+          <h5 className="card-title text-white">Superior Animal Feeds</h5>
+          <p className="card-text text-white">
+            Our feeds are made with premium-quality ingredients to provide complete and balanced nutrition for your livestock, ensuring optimal health and productivity.
+          </p>
+        </div>
+      </div>
+    </div>
 
-            <div className="col-md-4 mb-3">
-              <div className="card shadow-sm h-100 border-0">
-                <div className="card-body">
-                  <h5 className="card-title text-success">Quality Product Feeds</h5>
-                  <p className="card-text">
-                    We follow strict quality standards and source ingredients sustainably to deliver reliable, high-performing feeds for every farmer.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    <div className="col-md-4 mb-3">
+      <div className="card shadow-sm h-100 border-0" style={{ backgroundColor: "#ED1C23" }}>
+        <div className="card-body">
+          <h5 className="card-title text-white">Specially Formulated Feeds</h5>
+          <p className="card-text text-white">
+            Each feed is developed by expert nutritionists to meet specific dietary needs — for dairy cows, layers, kienyeji chickens, and sheep.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-md-4 mb-3">
+      <div className="card shadow-sm h-100 border-0" style={{ backgroundColor: "#ED1C23" }}>
+        <div className="card-body">
+          <h5 className="card-title text-white">Quality Product Feeds</h5>
+          <p className="card-text text-white">
+            We follow strict quality standards and source ingredients sustainably to deliver reliable, high-performing feeds for every farmer.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
         {/* --- Featured Products --- */}
         <FeaturedProducts />
@@ -94,12 +97,12 @@ export default function Home() {
         </section>
 
         {/* --- Call to Action Banner --- */}
-        <section className="bg-success text-white text-center py-5 rounded-3 shadow">
+        <section className="bg-light text-success text-center py-5 rounded-3 shadow">
           <h2>Ready to Boost Your Farm’s Productivity?</h2>
           <p className="lead mb-4">
-            Partner with Montana Feeds for superior nutrition and consistent results.
+            Partner with Serem Farm Feeds for superior nutrition and consistent results.
           </p>
-          <a href="/contact" className="btn btn-light btn-lg text-success fw-bold">
+          <a href="/contact" className="btn btn-success btn-lg text-light fw-bold">
             Get in Touch
           </a>
         </section>

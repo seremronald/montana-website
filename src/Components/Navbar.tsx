@@ -1,25 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '/src/assets/SEREM FARM FEEDS.png'; // ✅ Replace with your actual logo path
+import logo from '/src/assets/SEREM FARM FEEDS.png';
+import Collapse from 'bootstrap/js/dist/collapse'; // ✅ Import Collapse directly from Bootstrap
 
 export default function Navbar() {
+  const handleLinkClick = () => {
+    const navbar = document.getElementById('navbarNav');
+    if (navbar) {
+      const bsCollapse = Collapse.getInstance(navbar) || new Collapse(navbar, { toggle: false });
+      bsCollapse.hide();
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
       <div className="container-fluid px-4">
         
-        {/* ✅ Logo + Brand (left) */}
-        <Link className="navbar-brand d-flex align-items-center" to="/">
+        {/* ✅ Logo */}
+        <Link className="navbar-brand d-flex align-items-center" to="/" onClick={handleLinkClick}>
           <img
             src={logo}
             alt="Montana Feeds Logo"
-            width="60"
-            height="40"
+            width="100"
+            height="100"
             className="me-2"
           />
-          <span className="fw-bold text-success fs-5">SEREM FARM FEEDS</span>
         </Link>
 
-        {/* ✅ Toggler for mobile */}
+        {/* ✅ Toggler */}
         <button
           className="navbar-toggler"
           type="button"
@@ -32,13 +40,11 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* ✅ Navbar links */}
+        {/* ✅ Navbar Links */}
         <div className="collapse navbar-collapse" id="navbarNav">
-
-          {/* Centered Home + Products */}
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/" onClick={handleLinkClick}>Home</Link>
             </li>
 
             {/* Products Dropdown */}
@@ -54,21 +60,34 @@ export default function Navbar() {
                 Products
               </a>
               <ul className="dropdown-menu" aria-labelledby="productsDropdown">
-                <li><Link className="dropdown-item" to="/products/dairy">Dairy Feeds</Link></li>
-                <li><Link className="dropdown-item" to="/products/layers">Layers Mash</Link></li>
-                <li><Link className="dropdown-item" to="/products/kienyeji">Kienyeji Mash</Link></li>
-                <li><Link className="dropdown-item" to="/products/sheep">Sheep Feeds</Link></li>
+                <li><Link className="dropdown-item" to="/products/dairy" onClick={handleLinkClick}>Dairy Feeds</Link></li>
+                <li><Link className="dropdown-item" to="/products/layers" onClick={handleLinkClick}>Layers Mash</Link></li>
+                <li><Link className="dropdown-item" to="/products/kienyeji" onClick={handleLinkClick}>Kienyeji Mash</Link></li>
+                <li><Link className="dropdown-item" to="/products/sheep" onClick={handleLinkClick}>Sheep Feeds</Link></li>
+                <li><Link className="dropdown-item" to="/products/dog" onClick={handleLinkClick}>Dog Meal</Link></li>
               </ul>
             </li>
+
             <li className="nav-item">
-              <Link className="nav-link" to="/">About Us</Link>
+              <Link className="nav-link" to="/about" onClick={handleLinkClick}>About Us</Link>
             </li>
           </ul>
 
-          {/* Contact Us (right side) */}
+          {/* ✅ Custom Red Contact Us Button */}
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact Us</Link>
+              <Link
+                to="/contact"
+                onClick={handleLinkClick}
+                className="btn px-4 py-2 fw-semibold shadow-sm rounded-pill"
+                style={{
+                  backgroundColor: '#ed1C24',
+                  color: 'white',
+                  border: 'none',
+                }}
+              >
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>

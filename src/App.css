@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+.hero-section {
+  height: 70vh;
+  background: linear-gradient(to bottom, #ed1c24, #e9fbe5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

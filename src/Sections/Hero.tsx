@@ -1,23 +1,26 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
-export default function Hero(){
-return (
-<section className="hero text-white">
-<div className="container">
-<div className="row align-items-center">
-<div className="col-md-6">
-<h1 className="display-5 fw-bold">Nutritious Feed. Stronger Herds.</h1>
-<p className="lead">Premium feed formulations for poultry, cattle, and small stock — developed by nutritionists, trusted by farmers.</p>
-
-</div>
-<div className="col-md-6 d-none d-md-block">
-<div className="card bg-transparent border-0">
-<img src="/src/assets/FARM2.jpg" className="img-fluid rounded shadow" alt="Feeds" />
-</div>
-</div>
-</div>
-</div>
-</section>
-)
+export default function Hero() {
+  return (
+    <section
+      className="d-flex align-items-center justify-content-center text-center text-white"
+      style={{
+        backgroundImage: "url('src/assets/Pig Grower.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        height: '75vh'
+      }}
+    >
+      <div className="bg-dark bg-opacity-50 p-5 rounded-4">
+        <h1 className="fw-bold display-5 mb-3"> SEREM FARM FEEDS</h1>
+        <p className="lead mb-4">
+          Providing nutritious, high-quality feeds for healthier and more productive livestock.
+        </p>
+        <a href="/products" className="btn btn-light btn-lg text-success fw-bold shadow">
+          Explore Our Products
+        </a>
+      </div>
+    </section>
+  )
 }

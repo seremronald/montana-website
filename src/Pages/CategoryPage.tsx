@@ -1,5 +1,5 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
+import React from 'react';
+import { useParams } from 'react-router-dom';
 
 const allProducts = {
   dairy: [
@@ -30,7 +30,7 @@ const allProducts = {
     { 
       id: 5, 
       name: 'Serem Steamers', 
-      img: '/assets/dairy5.jpg',
+      img: '/src/assets/SEREM STEAMERS.jpg',
       description: 'Energy-dense feed to help maintain body condition in dairy cows post-calving.'
     },
   ],
@@ -99,46 +99,57 @@ const allProducts = {
       img: '/src/assets/SHEPELLETS.jpg',
       description: 'Supports rapid growth and muscle development in lambs and young goats.'
     },
-  ]
-}
+  ],
+
+  dog: [
+  {
+    id: 16,
+    name: 'Serem Dog Meal',
+    img: '/src/assets/DOGO MEAL.jpg',
+    description: 'A complete and balanced dog food rich in proteins, vitamins, and omega fats.',
+  },
+],
+
+};
 
 export default function CategoryPage() {
-  const { category } = useParams()
-  const products = allProducts[category as keyof typeof allProducts]
+  const { category } = useParams();
+  const products = allProducts[category as keyof typeof allProducts];
 
   if (!products) {
     return (
       <div className="container py-5 text-center">
         <h3>Category Not Found</h3>
       </div>
-    )
+    );
   }
 
   return (
-    <div className="container py-5">
-      <h2 className="mb-4 text-capitalize">{category} Products</h2>
+    <div className="container pt-3 pb-5">
+      <h2 className="mb-3 text-capitalize">{category} Products</h2>
       
       {/* Category Description */}
-      <p className="mb-5">
+      <p className="mb-4">
         {category === 'dairy' && 'Our dairy feeds are specially formulated to maximize milk yield and maintain cow health.'}
         {category === 'layers' && 'Our layers mash products are designed to support egg production and bird vitality.'}
         {category === 'kienyeji' && 'Our kienyeji feeds combine traditional nutrition with modern science for healthy indigenous poultry.'}
         {category === 'sheep' && 'Our sheep feeds provide balanced nutrition for weight gain and strong immune systems.'}
+        {category === 'dog' && 'Our dog meal is a complete and balanced food that promotes overall health and vitality for your canine companions.'}
       </p>
 
       {/* Product list in rows */}
-      <div className="row g-4">
+      <div className="row g-3">
         {products.map((product) => (
           <div className="col-12" key={product.id}>
-            <div className="card flex-row shadow-sm h-100">
+            <div className="card flex-row shadow-sm h-100 border-0 rounded-3">
               <img 
                 src={product.img} 
-                className="card-img-left" 
+                className="card-img-left rounded-start" 
                 alt={product.name} 
                 style={{ width: '200px', objectFit: 'cover' }} 
               />
               <div className="card-body d-flex flex-column justify-content-center">
-                <h5 className="card-title">{product.name}</h5>
+                <h5 className="card-title mb-2">{product.name}</h5>
                 <p className="text-muted small mb-0">{product.description}</p>
               </div>
             </div>
@@ -146,5 +157,5 @@ export default function CategoryPage() {
         ))}
       </div>
     </div>
-  )
+  );
 }

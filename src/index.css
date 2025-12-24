@@ -1,10 +1,78 @@
 /* Custom styles - small and professional */
 :root{
---brand: #ee0303; /* deep green */
+--brand: #ed1c24; /* deep green */
 --accent: #95d5b2;
 }
 body{font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
 .navbar-brand img{height:48px;}
 .hero{background: linear-gradient(90deg, rgba(245, 4, 4, 0.95), rgba(28,36,33,0.85)), url('/assets/farm-hero.jpg') center/cover no-repeat; color: white; padding: 4rem 0;}
 .card-product img{height:160px; object-fit:cover}
-.footer{background:#ee0303; color:#fff; padding:2rem 0}
+.footer{background:#ed1c24; color:#fff; padding:2rem 0}
+
+:root {
+  --brand-red: #ed1c24;
+}
+
+/* Replace Bootstrap’s green success color with your brand red */
+.text-success {
+  color: var(--brand-red) !important;
+}
+
+.bg-success {
+  background-color: var(--brand-red) !important;
+}
+
+.bg-success-subtle {
+  background-color: rgba(237, 28, 36, 0.1) !important; /* light red tint */
+}
+
+.btn-success {
+  background-color: var(--brand-red) !important;
+  border-color: var(--brand-red) !important;
+}
+
+.btn-success:hover {
+  background-color: #c4161d !important; /* darker red hover */
+  border-color: #c4161d !important;
+}
+/* Make navbar links bold and change color on hover */
+.navbar .nav-link {
+  font-weight: 600;
+  color: #000 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-item:hover {
+  color: #ed1c24 !important; /* Turns red on hover */
+}
+
+/* Style dropdown items */
+.dropdown-menu .dropdown-item {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Contact button styling */
+.contact-btn {
+  background-color: #ed1c24 !important;
+  color: #fff !important;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #c4161b !important; /* Slightly darker red on hover */
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
