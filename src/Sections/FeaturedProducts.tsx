@@ -1,40 +1,45 @@
 import React from 'react'
 
-
+// Import images as ES modules
+import dairyImg from '../assets/Dairy.jpg'
+import sheepImg from '../assets/Sheep Meal.jpg'
+import kienyejiImg from '../assets/Kienjeji.jpg'
+import layersImg from '../assets/EGSSS.jpg'
+import dogImg from '../assets/DOOG PIC.jpg'
 
 const products = [
   {
     id: 1,
     name: 'Dairy Feeds',
-    img: '/src/assets/Dairy.jpg',
+    img: dairyImg,
     description :
       'Formulated to enhance milk production and maintain cow health. Montana Dairy Feeds provide a balanced mix of proteins, energy, vitamins, and minerals to support high-yield and standard dairy cows throughout lactation.'
   },
   {
     id: 2,
     name: 'Sheep Feeds',
-    img: '/src/assets/Sheep Meal.jpg',
+    img: sheepImg,
     description:
       'Designed to support growth, wool production, and fertility in sheep. Our Sheep Meal contains essential nutrients that improve digestion, body weight, and overall performance while reducing feed wastage.'
   },
   {
     id: 3,
     name: 'Kienyeji Feeds',
-    img: '/src/assets/Kienjeji.jpg',
+    img: kienyejiImg,
     description:
       'A nutrient-rich feed for indigenous chickens raised under free-range conditions. Fortified with omena and natural proteins to promote faster growth, better egg production, and improved disease resistance.'
   },
   {
     id: 4,
     name: 'Layers Feeds',
-    img: '/src/assets/EGSSS.jpg',
+    img: layersImg,
     description:
       'Specially formulated to boost egg production, yolk quality, and shell strength. Layers Mash delivers balanced nutrition with optimal calcium and energy levels to keep your layers healthy and productive.'
   },
   {
     id: 5,
     name: 'Dog Meal',
-    img: '/src/assets/DOOG PIC.jpg',
+    img: dogImg,
     description:
       'A complete and balanced dog food rich in proteins, vitamins, and omega fats. Promotes healthy skin, shiny coat, strong bones, and long-lasting energy for active dogs.'
   },

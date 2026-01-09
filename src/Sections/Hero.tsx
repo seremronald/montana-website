@@ -1,11 +1,12 @@
 import React from 'react'
+import heroImg from '../assets/Pig Grower.jpg'
 
 export default function Hero() {
   return (
     <section
       className="d-flex align-items-center justify-content-center text-center text-white"
       style={{
-        backgroundImage: "url('src/assets/Pig Grower.jpg')",
+        backgroundImage: `url(${heroImg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

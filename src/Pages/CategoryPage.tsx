@@ -1,36 +1,53 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
+// Import all images as ES modules
+import econdairyImg from '../assets/ECONDAIRY11.jpg';
+import standardDmImg from '../assets/STANDARD DM.jpg';
+import hiyieldDmImg from '../assets/HIYIELD DM.jpg';
+import cpellImg from '../assets/CPELL.png';
+import steamersImg from '../assets/SEREM STEAMERS.jpg';
+import chiduckImg from '../assets/CHIDUCK.jpg';
+import growemashImg from '../assets/GROWEMASH.jpg';
+import layermashImg from '../assets/LAYERMASH.jpg';
+import kienyeWithOmenaImg from '../assets/KIENYEWITHOMENA.jpg';
+import kenyemashImg from '../assets/KENYEMASH.jpg';
+import kienyegrowersImg from '../assets/KIENYEGROWERS.jpg';
+import kienyelayesImg from '../assets/KIENYELAYES.jpg';
+import shemealImg from '../assets/SHEMEAL.jpg';
+import shepelletsImg from '../assets/SHEPELLETS.jpg';
+import dogoMealImg from '../assets/DOGO MEAL.jpg';
+
 const allProducts = {
   dairy: [
     { 
       id: 1, 
       name: 'Serem Economy Dairy Meal', 
-      img: '/src/assets/ECONDAIRY11.jpg',
+      img: econdairyImg,
       description: 'A balanced dairy feed ideal for low-yield cows, promoting consistent milk flow.'
     },
     { 
       id: 2, 
       name: 'Serem Standard Dairy Meal', 
-      img: '/src/assets/STANDARD DM.jpg',
+      img: standardDmImg,
       description: 'Formulated for medium-yield cows to support daily milk production and cow health.'
     },
     { 
       id: 3, 
       name: 'Serem Hi-Yield Dairy Meal', 
-      img: '/src/assets/HIYIELD DM.jpg',
+      img: hiyieldDmImg,
       description: 'High-protein formula designed for high-yielding dairy cows for optimal performance.'
     },
     { 
       id: 4, 
       name: 'Serem Calf Pellets', 
-      img: '/src/assets/CPELL.png',
+      img: cpellImg,
       description: 'Nutrient-rich starter feed that promotes early growth and development in calves.'
     },
     { 
       id: 5, 
       name: 'Serem Steamers', 
-      img: '/src/assets/SEREM STEAMERS.jpg',
+      img: steamersImg,
       description: 'Energy-dense feed to help maintain body condition in dairy cows post-calving.'
     },
   ],
@@ -38,19 +55,19 @@ const allProducts = {
     { 
       id: 6, 
       name: 'Serem Chick and Duckling Mash', 
-      img: '/src/assets/CHIDUCK.jpg',
+      img: chiduckImg,
       description: 'Balanced starter mash rich in protein for young chicks and ducklings.'
     },
     { 
       id: 7, 
       name: 'Serem Growers Mash', 
-      img: '/src/assets/GROWEMASH.jpg',
+      img: growemashImg,
       description: 'Specially formulated feed for growing poultry to build strong bones and muscles.'
     },
     { 
       id: 8, 
       name: 'Serem Layers Mash', 
-      img: '/src/assets/LAYERMASH.jpg',
+      img: layermashImg,
       description: 'Complete feed designed to boost egg production and shell quality in layers.'
     },
   ],
@@ -58,25 +75,25 @@ const allProducts = {
     { 
       id: 9, 
       name: 'Serem Kienyeji Mash with Omena', 
-      img: '/src/assets/KIENYEWITHOMENA.jpg',
+      img: kienyeWithOmenaImg,
       description: 'High-protein traditional poultry feed enriched with omena for healthy growth.'
     },
     { 
       id: 10, 
       name: 'Serem Kienyeji Mash', 
-      img: '/src/assets/KENYEMASH.jpg',
+      img: kenyemashImg,
       description: 'Balanced feed for indigenous chickens raised under free-range conditions.'
     },
     { 
       id: 11, 
       name: 'Serem Kienyeji Growers Mash', 
-      img: '/src/assets/KIENYEGROWERS.jpg',
+      img: kienyegrowersImg,
       description: 'Supports muscle and bone growth in developing Kienyeji chickens.'
     },
     { 
       id: 12, 
       name: 'Serem Kienyeji Layers Mash', 
-      img: '/src/assets/KIENYELAYES.jpg',
+      img: kienyelayesImg,
       description: 'Formulated to enhance egg yield and nutrition in Kienyeji hens.'
     },
   ],
@@ -84,19 +101,19 @@ const allProducts = {
     { 
       id: 13, 
       name: 'Serem Sheep Meal', 
-      img: '/src/assets/SHEMEAL.jpg',
+      img: shemealImg,
       description: 'High-energy formula ideal for fattening and maintaining healthy sheep.'
     },
     { 
       id: 14, 
       name: 'Serem Sheep Pellets', 
-      img: '/src/assets/SHEPELLETS.jpg',
+      img: shepelletsImg,
       description: 'Compact, nutrient-rich pellets for easy feeding and improved digestion.'
     },
     { 
       id: 15, 
       name: 'Serem Lamb & Kids Pellets', 
-      img: '/src/assets/SHEPELLETS.jpg',
+      img: shepelletsImg,
       description: 'Supports rapid growth and muscle development in lambs and young goats.'
     },
   ],
@@ -105,7 +122,7 @@ const allProducts = {
   {
     id: 16,
     name: 'Serem Dog Meal',
-    img: '/src/assets/DOGO MEAL.jpg',
+    img: dogoMealImg,
     description: 'A complete and balanced dog food rich in proteins, vitamins, and omega fats.',
   },
 ],

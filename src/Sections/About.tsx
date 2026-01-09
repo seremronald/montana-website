@@ -1,4 +1,5 @@
 import React from 'react'
+import aboutImg from '../assets/IMG_20250709_175917_HDR.jpg'
 
 export default function About() {
   return (
@@ -38,7 +39,7 @@ export default function About() {
             {/* --- Image Section --- */}
             <div className="col-lg-6 text-center">
               <img
-                src="/src/assets/IMG_20250709_175917_HDR.jpg"
+                src={aboutImg}
                 alt="Montana Animal Feeds facility"
                 className="img-fluid rounded shadow fade-in"
                 style={{

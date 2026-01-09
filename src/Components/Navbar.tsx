@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '/src/assets/SEREM FARM FEEDS.png';
+import logo from '../assets/SEREM FARM FEEDS.png';
 import Collapse from 'bootstrap/js/dist/collapse'; // ✅ Import Collapse directly from Bootstrap
 
 export default function Navbar() {
