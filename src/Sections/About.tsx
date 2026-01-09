@@ -4,6 +4,7 @@ export default function About() {
   return (
     <section className="mt-4 mb-5 ">
       <div className="container">
+        
         <div className="card border-0 shadow-sm p-4 bg-light">
           <div className="row align-items-center g-4 flex-lg-row-reverse">
 
