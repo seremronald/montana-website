@@ -5,19 +5,15 @@ export default function AboutPage() {
     <div className="container py-5">
       {/* About Us Section */}
       <section className="mb-5 text-center">
-        <h2 className="mb-4 fw-bold text-success ">About Serem Farm Feeds</h2>
-        <div className="card shadow-sm border-0">
+        <h2 className="mb-4 fw-bold text-success ">About Montana Animal Feeds</h2>
+        <div className="card shadow-sm  bg-light border-0">
           <div className="card-body p-4">
             <p className="text-muted mb-3">
-              At <strong>Serem Farm Feeds</strong>, we are dedicated to producing superior, affordable, and nutritious animal feeds 
+              At <strong>Montana Animal Feeds</strong>, we are dedicated to producing superior, affordable, and nutritious animal feeds 
               that promote healthy growth, productivity, and sustainability. Our commitment to excellence is backed by 
               years of expertise in animal nutrition and a passion for supporting farmers with reliable, high-quality products.
             </p>
-            <p className="text-muted">
-              We work closely with local ingredient suppliers to ensure every batch of feed meets strict quality standards. 
-              Whether you’re raising dairy cows, poultry, or small ruminants, Montana Animal Feeds provides tailored nutrition 
-              that brings out the best in your livestock.
-            </p>
+            
           </div>
         </div>
       </section>

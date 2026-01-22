@@ -21,8 +21,8 @@ export default function Navbar() {
           <img
             src={logo}
             alt="Montana Feeds Logo"
-            width="100"
-            height="100"
+            width="80"
+            height="80"
             className="me-2"
           />
         </Link>
@@ -42,7 +42,7 @@ export default function Navbar() {
 
         {/* ✅ Navbar Links */}
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav mx-auto">
+          <ul className="navbar-nav mx-auto  gap-2">
             <li className="nav-item">
               <Link className="nav-link" to="/" onClick={handleLinkClick}>Home</Link>
             </li>

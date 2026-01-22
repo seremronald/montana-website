@@ -3,6 +3,7 @@ import Hero from '../Sections/Hero'
 import About from '../Sections/About'
 import FeaturedProducts from '../Sections/FeaturedProducts'
 
+
 export default function Home() {
   return ( 
     <div>
@@ -16,7 +17,7 @@ export default function Home() {
 
         {/* --- Why Choose Montana Feeds --- */}
 <section className="my-5 p-5 rounded-3 bg-light">
-  <h2 className="text-center mb-4 text-success">WHY SEREM FARM FEEDS</h2>
+  <h2 className="text-center mb-4 text-success">Why Serem Farm Feeds</h2>
   <div className="row">
 
     <div className="col-md-4 mb-3">
@@ -67,7 +68,7 @@ export default function Home() {
               <div className="card shadow-sm border-0 h-100">
                 <div className="card-body">
                   <p className="card-text">
-                    “My dairy cows now produce more milk thanks to Montana Feeds. Truly the best in the region!”
+                    “My dairy cows now produce more milk thanks to Serem Farm Feeds. Truly the best in the region!”
                   </p>
                   <h6 className="text-success mt-3">— Grace, Uasin Gishu</h6>
                 </div>
@@ -87,7 +88,7 @@ export default function Home() {
               <div className="card shadow-sm border-0 h-100">
                 <div className="card-body">
                   <p className="card-text">
-                    “Montana Feeds has been a game changer for my farm. Consistent quality and great customer service.”
+                    “Serem Farm Feeds has been a game changer for my farm. Consistent quality and great customer service.”
                   </p>
                   <h6 className="text-success mt-3">— Faith, Kericho</h6>
                 </div>
@@ -100,11 +101,9 @@ export default function Home() {
         <section className="bg-light text-success text-center py-5 rounded-3 shadow">
           <h2>Ready to Boost Your Farm’s Productivity?</h2>
           <p className="lead mb-4">
-            Partner with Serem Farm Feeds for superior nutrition and consistent results.
+            Buy from Serem Farm Feeds for superior nutrition and consistent results.
           </p>
-          <a href="/contact" className="btn btn-success btn-lg text-light fw-bold">
-            Get in Touch
-          </a>
+    
         </section>
       </div>
     </div>

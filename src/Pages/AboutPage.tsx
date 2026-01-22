@@ -11,12 +11,6 @@ export default function AboutPage() {
           that promote healthy growth, productivity, and sustainability. Our commitment to excellence is backed by 
           years of expertise in animal nutrition and a passion for supporting farmers with reliable, high-quality products.
         </p>
-
-        <p className="text-center text-muted">
-          We work closely with local ingredient suppliers to ensure every batch of feed meets strict quality standards. 
-          Whether you’re raising dairy cows, poultry, or small ruminants, Montana Animal Feeds provides tailored nutrition 
-          that brings out the best in your livestock.
-        </p>
       </section>
 
       {/* Vision Section */}

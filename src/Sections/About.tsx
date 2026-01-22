@@ -1,5 +1,6 @@
 import React from 'react'
-import aboutImg from '../assets/IMG_20250709_175917_HDR.jpg'
+import aboutImg from '../assets/IMG_20250718_092515_HDR.jpg'
+import slide2 from '../assets/IMG_20250718_092515_HDR.jpg'
 
 export default function About() {
   return (
@@ -11,20 +12,16 @@ export default function About() {
 
             {/* --- Text Section --- */}
             <div className="col-lg-6 ">
-              <h2 className="text-success mb-10">WHO ARE WE?</h2>
+              <h2 className="text-success mb-10">Who are we?</h2>
               <p className="text-muted">
-                <strong>Serem Farm Feeds</strong> is committed to providing high-quality,
+                <strong>Montana Animal Feeds</strong> is committed to providing high-quality,
                 affordable, and nutritious animal feeds that help farmers achieve optimal livestock
                 performance. We use locally sourced ingredients and advanced formulation techniques
                 to guarantee consistent quality and nutrition.
               </p>
+              
               <p className="text-muted">
-                Our team of nutrition experts works closely with farmers to ensure that each feed
-                product meets the specific needs of their animals — from dairy cows to poultry and
-                small ruminants.
-              </p>
-              <p className="text-muted">
-                <strong>Serem Farm Feeds</strong> operates as a proud <strong>subsidiary of Montana Animal Feeds</strong>,
+                <strong>Serem Farm Feeds</strong> operates as a proud <strong>subsidiary</strong>of <strong>Montana Animal Feeds</strong>,
                 extending our commitment to quality and farmer satisfaction through specialized feed
                 production and distribution across the region.
               </p>
@@ -37,14 +34,15 @@ export default function About() {
             </div>
 
             {/* --- Image Section --- */}
-            <div className="col-lg-6 text-center">
+            <div className="col-lg-6 text-center ">
+              
               <img
                 src={aboutImg}
                 alt="Montana Animal Feeds facility"
                 className="img-fluid rounded shadow fade-in"
                 style={{
-                  width: '1OO%',
-                  maxHeight: '600px',
+                  width: '80%',
+                  maxHeight: '400px',
                   objectFit: 'cover',
                 }}
               />
@@ -52,6 +50,8 @@ export default function About() {
           </div>
         </div>
       </div>
+      
     </section>
+    
   )
 }

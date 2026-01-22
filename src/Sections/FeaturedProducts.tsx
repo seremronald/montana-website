@@ -47,8 +47,8 @@ const products = [
 
 export default function FeaturedProducts() {
   return (
-    <section className="my-5">
-      <h3 className="text-center mb-4" style={{ color: '#ed1C24' }}>Featured Products</h3>
+    <section className="my-5  bg-light p-4 rounded-3">
+      <h3 className="text-center mb-4 " style={{ color: '#ed1C24' }}>Featured Products</h3>
       <div className="row g-4">
         {products.map((p) => (
           <div key={p.id} className="col-12 col-md-6 col-lg-4">

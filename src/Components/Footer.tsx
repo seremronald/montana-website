@@ -15,9 +15,9 @@ export default function Footer() {
           <div className="col-md-3">
             <h6 className="mb-2">Quick Links</h6>
             <ul className="list-unstyled small mb-0">
-              <li><a href="#" className="text-white text-decoration-none">Facebook</a></li>
-              <li><a href="#" className="text-white text-decoration-none">Tiktok</a></li>
-              <li><a href="#" className="text-white text-decoration-none">Instagram</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=100064626026239" className="text-white text-decoration-none">Facebook</a></li>
+              <li><a href="https://vm.tiktok.com/ZMHWEstYvVoFC-mUWwf/" className="text-white text-decoration-none">Tiktok</a></li>
+              <li><a href="https://www.instagram.com/montanafeedsltd?igsh=YzljYTk1ODg3Zg==" className="text-white text-decoration-none">Instagram</a></li>
             </ul>
           </div>
 
@@ -25,7 +25,8 @@ export default function Footer() {
           <div className="col-md-3">
             <h6 className="mb-2">Contact</h6>
             <p className="small mb-0">
-              Phone: +254 723 092 409 <br />
+              Phone: 0723 092 409 <br />
+              Phone: 0704 417 813 <br />
               Email: info@montanafeeds.co.ke
             </p>
           </div>
