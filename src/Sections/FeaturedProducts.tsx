@@ -13,7 +13,7 @@ const products = [
     name: 'Dairy Feeds',
     img: dairyImg,
     description :
-      'Formulated to enhance milk production and maintain cow health. Montana Dairy Feeds provide a balanced mix of proteins, energy, vitamins, and minerals to support high-yield and standard dairy cows throughout lactation.'
+      'Formulated to enhance milk production and maintain cow health. Serem Dairy Feeds provide a balanced mix of proteins, energy, vitamins, and minerals to support high-yield and standard dairy cows throughout lactation.'
   },
   {
     id: 2,
@@ -66,15 +66,7 @@ export default function FeaturedProducts() {
                 <p className="card-text text-muted small text-center">
                   {p.description}
                 </p>
-                <div className="mt-auto text-center">
-                  <a
-                    href={`/CategoryPage/${p.name.toLowerCase()}`}
-                    className="btn fw-bold btn-sm mt-2"
-                    style={{ backgroundColor: '#ed1C24', color: '#fff' }}
-                  >
-            
-                  </a>
-                </div>
+        
               </div>
             </div>
           </div>

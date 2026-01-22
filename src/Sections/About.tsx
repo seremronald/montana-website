@@ -1,57 +1,29 @@
-import React from 'react'
-import aboutImg from '../assets/IMG_20250718_092515_HDR.jpg'
-import slide2 from '../assets/IMG_20250718_092515_HDR.jpg'
+import React from 'react';
 
 export default function About() {
   return (
-    <section className="mt-4 mb-5 ">
+    <section className="mt-4 mb-5">
       <div className="container">
-        
         <div className="card border-0 shadow-sm p-4 bg-light">
-          <div className="row align-items-center g-4 flex-lg-row-reverse">
+          
+          <h2 className="text-success text-center mb-3">Who are we?</h2>
 
-            {/* --- Text Section --- */}
-            <div className="col-lg-6 ">
-              <h2 className="text-success mb-10">Who are we?</h2>
-              <p className="text-muted">
-                <strong>Montana Animal Feeds</strong> is committed to providing high-quality,
-                affordable, and nutritious animal feeds that help farmers achieve optimal livestock
-                performance. We use locally sourced ingredients and advanced formulation techniques
-                to guarantee consistent quality and nutrition.
-              </p>
-              
-              <p className="text-muted">
-                <strong>Serem Farm Feeds</strong> operates as a proud <strong>subsidiary</strong>of <strong>Montana Animal Feeds</strong>,
-                extending our commitment to quality and farmer satisfaction through specialized feed
-                production and distribution across the region.
-              </p>
+          <p className="text-muted mb-3">
+            <strong>Montana Animal Feeds</strong> is committed to providing high-quality,
+            affordable, and nutritious animal feeds that help farmers achieve optimal
+            livestock performance. We use locally sourced ingredients and advanced
+            formulation techniques to guarantee consistent quality and nutrition.
+          </p>
 
-              <ul className="list-unstyled mt-3">
-                <li>1. Locally sourced, quality ingredients</li>
-                <li>2. Nutritionist-approved feed formulas</li>
-                <li>3. Reliable delivery and customer support</li>
-              </ul>
-            </div>
+          <p className="text-muted mb-0">
+            <strong>Serem Farm Feeds</strong> operates as a proud <strong>subsidiary</strong> of{' '}
+            <strong>Montana Animal Feeds</strong>, extending our commitment to quality and
+            farmer satisfaction through specialized feed production and distribution
+            across the region.
+          </p>
 
-            {/* --- Image Section --- */}
-            <div className="col-lg-6 text-center ">
-              
-              <img
-                src={aboutImg}
-                alt="Montana Animal Feeds facility"
-                className="img-fluid rounded shadow fade-in"
-                style={{
-                  width: '80%',
-                  maxHeight: '400px',
-                  objectFit: 'cover',
-                }}
-              />
-            </div>
-          </div>
         </div>
       </div>
-      
     </section>
-    
-  )
+  );
 }
